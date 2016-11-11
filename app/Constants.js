@@ -113,7 +113,7 @@ export default {
       // transform: (value) => (value / 1000).toFixed(2),
       // unit: 's',
       transform: (value) => (value / 1000).toFixed(3),
-      unit: '',
+      unit: 's',
       description: 'A custom metric introduced by WebPageTest to rate pages based on how quickly they are visually populated'
     },
     TTFB: {
