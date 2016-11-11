@@ -110,7 +110,9 @@ export default {
     SpeedIndex: {
       color: [87, 117, 144],
       name: 'SpeedIndex',
-      transform: (value) => (value / 1000).toFixed(2),
+      // transform: (value) => (value / 1000).toFixed(2),
+      // unit: 's',
+      transform: (value) => (value / 1000).toFixed(3),
       unit: 's',
       description: 'A custom metric introduced by WebPageTest to rate pages based on how quickly they are visually populated'
     },
