@@ -36,6 +36,8 @@
   &:focus {
     border-bottom-color: rgba(white, 0.5);
   }
+
+  & > option { color: initial; }
 }
 
 .c-TopBar__nav {
