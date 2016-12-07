@@ -19,7 +19,7 @@
         "requests": [40]
       },
       "flash": {
-        "bytes": [0]
+        "bytes": [0],
         "requests": [0]
       },
       "font": {
