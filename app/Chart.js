@@ -48,7 +48,7 @@ class Chart extends React.Component {
         borderWidth: 1,
         data: values,
         label: metric.name,
-        lineTension: 0.6,
+        lineTension: 0.1,
         pointHoverRadius: 5,
         pointHitRadius: 10,
         pointRadius: 5
