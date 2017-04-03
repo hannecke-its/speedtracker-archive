@@ -2,7 +2,7 @@
 
 # Front-end
 
-> v1.0.2
+> v1.2.1
 
 *Visualisation layer and data store for SpeedTracker*
 

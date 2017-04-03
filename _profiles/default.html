@@ -19,7 +19,10 @@ default: true
 interval: 24
 
 #
-# WebPageTest test parameters
+# WebPageTest test parameters.
+# For a list of supported params, check:
+#
+# https://www.npmjs.com/package/webpagetest
 #
 parameters:
   connectivity: "Cable"
@@ -27,6 +30,14 @@ parameters:
   firstViewOnly: false
   runs: 5
   url: "http://www.nec-display-solutions.de"
+
+#
+# The URL of the WebPageTest instance to be used with this profile. Please note that
+# if you decide to encrypt this URL, the filmstrip section will not be displayed.
+#
+# If you leave this field out, the public instance of WebPageTest will be used.
+#
+#wptUrl: https://www.webpagetest.org
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value
