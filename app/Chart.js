@@ -137,7 +137,7 @@ class Chart extends React.Component {
               const minutes = date.getMinutes()
               const seconds = date.getSeconds()
 
-              return `${day}/${month}/${year} @ ${hours}:${minutes}:${seconds}`
+              return `${day}.${month}.${year} @ ${hours}:${minutes}:${seconds}`
             }
           },
           position: 'nearest'
