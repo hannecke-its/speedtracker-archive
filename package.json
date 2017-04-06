@@ -4,9 +4,10 @@
   "description": "Website performance monitoring tool",
   "main": "index.js",
   "scripts": {
-    "start": "jekyll serve",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p",
-    "watch": "./node_modules/webpack/bin/webpack.js --watch"
+	"start": "jekyll serve",
+	"prebuild": "set NODE_ENV=production",
+	"build": "webpack -p",
+	"watch": "webpack --watch"
   },
   "author": "Eduardo Bouças <mail@eduardoboucas.com> (https://eduardoboucas.com)",
   "license": "MIT",
