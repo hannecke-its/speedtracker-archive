@@ -131,8 +131,8 @@ class Chart extends React.Component {
             title: function (tooltipItems, data) {
               const date = new Date(tooltipItems[0].xLabel)
               const year = date.getFullYear()
-              const month = date.getMonth() + 1
-              const day = date.getDate()
+              const month = ('0'  + (date.getMonth() + 1)).slice(-2)
+              const day = ('0' + date.getDate()).slice(-2)
               const hours = date.getHours()
               const minutes = date.getMinutes()
               const seconds = date.getSeconds()

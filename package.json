@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
 	"start": "jekyll serve",
-	"prebuild": "set NODE_ENV=production",
-	"build": "webpack -p",
+	"build": "set NODE_ENV=production && webpack -p",
 	"watch": "webpack --watch"
   },
   "author": "Eduardo Bouças <mail@eduardoboucas.com> (https://eduardoboucas.com)",
