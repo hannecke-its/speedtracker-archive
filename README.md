@@ -2,11 +2,13 @@
 
 # Front-end
 
-> v1.2.1
+> v1.2.2
 
 *Visualisation layer and data store for SpeedTracker*
 
 ---
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
 ## Installation
 
@@ -27,13 +29,13 @@
   ```
   npm install
   ```
-  
+
 1. Start the Jekyll server
 
   ```
   jekyll serve --watch --port SOME_PORT
   ```
-  
+
 1. Start Webpack
 
   ```
@@ -45,7 +47,7 @@
   ```
   npm run build
   ```
-  
+
 ---
 
 ## License
