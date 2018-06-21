@@ -40,9 +40,11 @@ class TopBar extends React.Component {
                 <option value='week'>week</option>
                 <option value='month'>month</option>
                 <option value='year'>year</option>
-				<option value='2018'>2018</option>
-                <option value='2017'>2017</option>
-				<option value='2016'>2016</option>
+                <optgroup label='archive'>
+					<option value='2018'>2018</option>
+					<option value='2017'>2017</option>
+					<option value='2016'>2016</option>
+                </optgroup>
               </select>
             </p>
           </div>
