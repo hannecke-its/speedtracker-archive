@@ -147,7 +147,8 @@ export default {
     'week',
     'month',
     'year',
+	'2016',
 	'2017',
-	'2016'
+	'2018'
   ]
 }
