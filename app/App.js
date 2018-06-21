@@ -20,7 +20,7 @@ class App extends React.Component {
     let activeProfile = window.PROFILES.find(profile => profile.active)
 
     let urlParameters = parseUrl(window.location.search)
-    let period = Constants.periods.indexOf(urlParameters.period) > -1 ? urlParameters.period : 'week'
+    let period = Constants.periods.indexOf(urlParameters.period) > -1 ? urlParameters.period : 'month'
 
     this.state = {
       loading: true,
