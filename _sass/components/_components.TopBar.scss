@@ -44,6 +44,11 @@
   }
 
   & > option { background-color: #EA8C55; }
+  & > optgroup {
+	  background-color: #EA8C55;
+
+	  &::before { background-color: #EA8C55; }
+  }
 }
 
 .c-TopBar__nav {
