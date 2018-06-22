@@ -45,9 +45,9 @@
 
   & > option { background-color: #EA8C55; }
   & > optgroup {
-	  background-color: #EA8C55;
+	  background: #EA8C55;
 
-	  &::before { background-color: #EA8C55; }
+	  &::before { background: #EA8C55; }
   }
 }
 
