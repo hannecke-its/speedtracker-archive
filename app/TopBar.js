@@ -41,7 +41,34 @@ class TopBar extends React.Component {
                 <option value='2017'>2017</option>
                 <option value='2016'>2016</option>
               </select>
-              /*<select className='c-TopBar__select'
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  /*render () {
+    return (
+      <div className='c-TopBar'>
+        <div className='c-TopBar__inner'>
+          <a href='https://speedtracker.org'>
+            <Logo width={40} />
+            <LogoTitle width={140} />
+          </a>
+          <div className='c-TopBar__nav'>
+            <p>
+              Viewing
+              <select className='c-TopBar__select'
+                value={this.props.profile.slug}
+                onChange={this._onProfileChange.bind(this)}>
+                {this.props.profiles.map(profile => {
+                  return (
+                    <option key={profile.slug} value={profile.slug}>{profile.name}</option>
+                  )
+                })}
+              </select> in the last 
+              <select className='c-TopBar__select'
                 value={this.props.period}
                 onChange={this._onPeriodChange.bind(this)}>
                 <option value='day'>day</option>
@@ -54,13 +81,13 @@ class TopBar extends React.Component {
                   <option value='2017'>2017</option>
                   <option value='2016'>2016</option>
                 </optgroup>
-              </select>*/
+              </select>
             </p>
           </div>
         </div>
       </div>
     )
-  }
+  }*/
 }
 
 export default TopBar
