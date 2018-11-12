@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "jekyll serve",
-    "build": "set NODE_ENV=production && webpack -p",
+    "prebuild": "set NODE_ENV=production",
+    "build": "webpack -p",
     "lint": "standard --verbose | snazzy",
     "watch": "webpack --watch"
   },

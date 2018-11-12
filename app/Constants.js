@@ -146,6 +146,9 @@ export default {
     'day',
     'week',
     'month',
-    'year'
+    'year',
+	'2016',
+	'2017',
+	'2018'
   ]
 }

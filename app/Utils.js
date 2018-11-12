@@ -28,6 +28,24 @@ const getDateRangeForPeriod = (period) => {
       pastDate.setFullYear(pastDate.getFullYear() - 1)
 
       break
+
+    case '2016':
+		currentDate = new Date('2016-12-31T23:59:59')
+		pastDate = new Date('2016-01-01T00:00:01')
+
+      break
+
+    case '2017':
+		currentDate = new Date('2017-12-31T23:59:59')
+		pastDate = new Date('2017-01-01T00:00:01')
+
+      break
+
+    case '2018':
+		currentDate = new Date('2018-12-31T23:59:59')
+		pastDate = new Date('2018-01-01T00:00:01')
+
+      break
   }
 
   return {
