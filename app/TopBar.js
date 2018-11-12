@@ -32,19 +32,20 @@ class TopBar extends React.Component {
                     <option key={profile.slug} value={profile.slug}>{profile.name}</option>
                   )
                 })}
-              </select> in the last
+              </select> in 
               <select className='c-TopBar__select'
                 value={this.props.period}
                 onChange={this._onPeriodChange.bind(this)}>
-                <option value='day'>day</option>
-                <option value='week'>week</option>
-                <option value='month'>month</option>
-                <option value='year'>year</option>
-                <optgroup label='archive'>
-					<option value='2018'>2018</option>
-					<option value='2017'>2017</option>
-					<option value='2016'>2016</option>
-                </optgroup>
+                //<option value='day'>day</option>
+                //<option value='week'>week</option>
+                //<option value='month'>month</option>
+                //<option value='year'>year</option>
+                //<optgroup label='archive'>
+                <option value='2019'>2019</option>
+                <option value='2018'>2018</option>
+                <option value='2017'>2017</option>
+                <option value='2016'>2016</option>
+                //</optgroup>
               </select>
             </p>
           </div>
