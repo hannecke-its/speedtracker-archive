@@ -9,7 +9,7 @@ name: "NDSE Start D/A/CH direct (IE EC2, Cable, Chrome)"
 # The default profile will be the one shown when accessing the root URL of your
 # SpeedTracker site.
 #
-default: true
+default: false
 
 #
 # If you want tests to be repeated automatically, you can an interval (in hours)
@@ -28,7 +28,9 @@ parameters:
   connectivity: "Cable"
   location: "ec2-eu-west-1:Chrome"
   firstViewOnly: false
-  runs: 5
+  runs: 3
+  width: 1440
+  height: 900
   url: "https://www.nec-display-solutions.com/p/de/de/home.xhtml"
 
 #
