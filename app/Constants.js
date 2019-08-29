@@ -146,6 +146,7 @@ export default {
     'day',
     'week',
     'month',
+    '6months',
     'year'
   ]
 }
