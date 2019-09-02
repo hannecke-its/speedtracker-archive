@@ -23,8 +23,13 @@ const getDateRangeForPeriod = (period) => {
       pastDate.setMonth(pastDate.getMonth() - 1)
 
       break
+    
+    case 'months3':
+      pastDate.setMonth(pastDate.getMonth() - 3)
+
+      break
 	  
-    case '6months':
+    case 'months6':
       pastDate.setMonth(pastDate.getMonth() - 6)
 
       break

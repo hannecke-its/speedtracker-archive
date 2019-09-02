@@ -39,7 +39,8 @@ class TopBar extends React.Component {
                 <option value='day'>day</option>
                 <option value='week'>week</option>
                 <option value='month'>month</option>
-                <option value='6months'>6 months</option>
+                <option value='months3'>3 months</option>
+                <option value='months6'>6 months</option>
                 <option value='year'>year</option>
               </select>
             </p>
