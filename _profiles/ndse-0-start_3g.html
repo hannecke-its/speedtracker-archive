@@ -3,7 +3,7 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "NDSE Start D/A/CH direct (IE EC2, Cable, Chrome)"
+name: "NDSE Start D/A/CH (IE EC2, 3G, Chrome)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
@@ -25,13 +25,12 @@ interval: 48
 # https://www.npmjs.com/package/webpagetest
 #
 parameters:
-  connectivity: "Cable"
+  connectivity: "3G"
   location: "ec2-eu-west-1:Chrome"
 #  firstViewOnly: false
   firstViewOnly: true
   runs: 3
-  viewportWidth: 1440
-  viewportHeight: 900
+  emulateMobile: true
   url: "https://www.nec-display-solutions.com/p/de/de/home.xhtml"
 
 #
@@ -54,10 +53,10 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 400
+    max: 1000
 #    alerts: ["emailAlert", "slackAlert"]
   -
     metric: firstPaint
-    max: 2000
+    max: 4000
 #    alerts: ["slackAlert"]
 ---

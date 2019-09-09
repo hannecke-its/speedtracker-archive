@@ -3,13 +3,13 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "NDSE Start D/A/CH direct (IE EC2, 3G, Chrome)"
+name: "NDSE Start D/A/CH [redirect] (IE EC2, Cable, Chrome)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
 # SpeedTracker site.
 #
-default: false
+default: true
 
 #
 # If you want tests to be repeated automatically, you can an interval (in hours)
@@ -25,13 +25,13 @@ interval: 48
 # https://www.npmjs.com/package/webpagetest
 #
 parameters:
-  connectivity: "3G"
+  connectivity: "Cable"
   location: "ec2-eu-west-1:Chrome"
-#  firstViewOnly: false
   firstViewOnly: true
   runs: 3
-  emulateMobile: true
-  url: "https://www.nec-display-solutions.com/p/de/de/home.xhtml"
+  viewportWidth: 1440
+  viewportHeight: 900
+  url: "http://www.nec-display-solutions.de"
 
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
@@ -53,10 +53,10 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 1000
+    max: 400
 #    alerts: ["emailAlert", "slackAlert"]
   -
     metric: firstPaint
-    max: 4000
+    max: 2000
 #    alerts: ["slackAlert"]
 ---
