@@ -3,7 +3,7 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "NDSE News (IE EC2, Cable, Chrome)"
+name: "NDSE Awards (IE EC2, 3G, Chrome)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
@@ -22,11 +22,12 @@ default: false
 # WebPageTest test parameters
 #
 parameters:
-  connectivity: "Cable"
+  connectivity: "3G"
   location: "ec2-eu-west-1:Chrome"
   firstViewOnly: false
   runs: 5
-  url: "https://www.nec-display-solutions.com/p/de/de/news.xhtml"
+  emulateMobile: true
+  url: "https://www.nec-display-solutions.com/p/de/de/seemore/awards.xhtml"
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value
@@ -40,10 +41,10 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 400
+    max: 1000
 #    alerts: ["emailAlert", "slackAlert"]
   -
     metric: firstPaint
-    max: 2000
+    max: 4000
 #    alerts: ["slackAlert"]
 ---
