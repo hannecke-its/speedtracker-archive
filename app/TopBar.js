@@ -36,6 +36,7 @@ class TopBar extends React.Component {
               <select className='c-TopBar__select'
                 value={this.props.period}
                 onChange={this._onPeriodChange.bind(this)}>
+                <option value='2019'>2019</option>
                 <option value='2018'>2018</option>
                 <option value='2017'>2017</option>
                 <option value='2016'>2016</option>
@@ -73,6 +74,8 @@ class TopBar extends React.Component {
                 <option value='day'>day</option>
                 <option value='week'>week</option>
                 <option value='month'>month</option>
+                <option value='months3'>3 months</option>
+                <option value='months6'>6 months</option>
                 <option value='year'>year</option>
                 <optgroup label='archive'>
                   <option value='2019'>2019</option>

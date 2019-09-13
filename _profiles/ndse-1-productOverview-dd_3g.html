@@ -16,18 +16,30 @@ default: false
 # with a minimum value of 12, as only two scheduled tests per day are allowed.
 # To disabled repeated tests, simply remove this property from the profile.
 #
-#interval: 48
+#interval: 96
 
 #
-# WebPageTest test parameters
+# WebPageTest test parameters.
+# For a list of supported params, check:
+#
+# https://www.npmjs.com/package/webpagetest
 #
 parameters:
   connectivity: "3G"
   location: "ec2-eu-west-1:Chrome"
-  firstViewOnly: false
-  runs: 5
+#  firstViewOnly: false
+  firstViewOnly: true
+  runs: 3
   emulateMobile: true
   url: "https://www.nec-display-solutions.com/p/de/de/products/choice.xhtml?cat=LCD"
+
+#
+# The URL of the WebPageTest instance to be used with this profile. Please note that
+# if you decide to encrypt this URL, the filmstrip section will not be displayed.
+#
+# If you leave this field out, the public instance of WebPageTest will be used.
+#
+#wptUrl: https://www.webpagetest.org
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value

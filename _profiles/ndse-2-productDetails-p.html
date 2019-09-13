@@ -19,14 +19,28 @@ default: false
 #interval: 48
 
 #
-# WebPageTest test parameters
+# WebPageTest test parameters.
+# For a list of supported params, check:
+#
+# https://www.npmjs.com/package/webpagetest
 #
 parameters:
   connectivity: "Cable"
   location: "ec2-eu-west-1:Chrome"
-  firstViewOnly: false
-  runs: 5
+#  firstViewOnly: false
+  firstViewOnly: true
+  runs: 3
+  viewportWidth: 1440
+  viewportHeight: 900
   url: "https://www.nec-display-solutions.com/p/de/de/products/details/rp/M353WS.xhtml"
+
+#
+# The URL of the WebPageTest instance to be used with this profile. Please note that
+# if you decide to encrypt this URL, the filmstrip section will not be displayed.
+#
+# If you leave this field out, the public instance of WebPageTest will be used.
+#
+#wptUrl: https://www.webpagetest.org
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value
@@ -40,7 +54,7 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 400
+    max: 800
 #    alerts: ["emailAlert", "slackAlert"]
   -
     metric: firstPaint
